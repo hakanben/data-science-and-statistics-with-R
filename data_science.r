@@ -1,6 +1,6 @@
 #1. Introduction
 #a. Reading data from outside
-heart<-read.csv("C:/Users/LENOVO/Desktop/heart.csv", header=TRUE)
+heart<-read.csv("C:/your/dataset/path/heart.csv", header=TRUE)
 
 #b. Checking row and column names
 heart #controlling data
@@ -428,5 +428,6 @@ plot(heartData$thalach, heartData$age, main = "Thalach vs. Age", xlab = "Thalach
 abline(lm(age ~ thalach, data = veri), col = "red")
 plot(heartData$oldpeak, heartData$age, main = "Oldpeak vs. Age", xlab = "Oldpeak", ylab = "Age", pch = 19)
 abline(lm(age ~ oldpeak, data = veri), col = "red")
+
 
 #Hakan Büyüktuncay
